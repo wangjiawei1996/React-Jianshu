@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
-
 import {
-  HeaderWrapper,
-  Logo,
-  NAV,
-  NavItem,
-  SearchWrapper,
-  NavSearch,
-  Addition,
-  Button
+  HeaderWrapper,Logo,NAV,NavItem,SearchWrapper, NavSearch,Addition,Button
 } from './style';
 class Header extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      focused:false
+    }
+  }
   render(){
     return (
       <HeaderWrapper>
@@ -20,16 +18,18 @@ class Header extends Component {
           <NavItem className='left'>下载App</NavItem>
           <NavItem className='right'>登录</NavItem>
           <NavItem className='right'>
-            <i className="iconfont">&#xe636;</i>
+            <i className="iconfont">Aa</i>
           </NavItem>
           <SearchWrapper>
-            <NavSearch></NavSearch>
-            <i className="iconfont">&#xe614;</i>
+            <NavSearch
+              className={this.state.focused ? 'focused' : ''}
+            ></NavSearch>
+            <i className="iconfont"></i>
           </SearchWrapper>
         </NAV>
         <Addition>
           <Button className='writting'>
-            <i className="iconfont">&#xe615;</i>
+            <i className="iconfont"></i>
             写文章
           </Button>
           <Button className='reg'>注册</Button>
@@ -38,5 +38,4 @@ class Header extends Component {
     )
   }
 }
-
 export default Header;
