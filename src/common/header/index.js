@@ -5,20 +5,24 @@ import  { actionCreators } from './store';
 import {  HeaderWrapper,Logo,NAV,NavItem,SearchWrapper, NavSearch,SearchInfo,SearchInfoTitle,SearchInfoSwitch,SearchInfoList,SearchInfoItem,Addition,Button} from './style';
 class Header extends Component {
   getListArea() {
-    const {focused, list} = this.props;
+    const {focused, list, page, handleMouseEnter } = this.props;
+    const newList = list.toJS();
+    const pageList = [];
+
+    for (let i = (page - 1) * 10;i < page * 10; i++){
+      pageList.push(
+        <SearchInfoItem key={newList[i]}>{newList[i]}</SearchInfoItem>
+      )
+    }
     if (focused) {
       return (
-        <SearchInfo>
+        <SearchInfo onMouseEnter={handleMouseEnter}>
           <SearchInfoTitle>
             热门搜索
             <SearchInfoSwitch>换一批</SearchInfoSwitch>
           </SearchInfoTitle>
           <SearchInfoList>
-            {
-              list.map((item) => {
-                return <SearchInfoItem key={item}>{item}</SearchInfoItem>
-              })
-            } 
+            {pageList} 
           </SearchInfoList>
         </SearchInfo>
       )
@@ -71,7 +75,8 @@ class Header extends Component {
 const mapStateToProps = (state) => {
   return {
     focused:  state.getIn(['header','focused']),
-    list: state.getIn(['header','list'])
+    list: state.getIn(['header','list']),
+    page: state.getIn(['header','page'])
   }
 }
 const mapDispathToProps = (dispatch) => {
@@ -82,6 +87,9 @@ const mapDispathToProps = (dispatch) => {
     },
     handleInputBlur() {
       dispatch(actionCreators.searchBlur());
+    },
+    handleMouseEnter() {
+      dispatch(actionCreators.mouseEnter());
     }
   } 
 }
