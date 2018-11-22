@@ -3,7 +3,7 @@ import { fromJS } from 'immutable';
 
 const defaultState = fromJS({
     focused: false,
-    mouseIn:false,
+    mouseIn: false,
     list:[],
     page: 1,
     totalPage: 1
@@ -18,7 +18,7 @@ const defaultState = fromJS({
       case constants.CHANGE_LIST:
         return state.set('list', action.data).set('totalPage',action.totalPage);
       case constants.MOUSE_ENTER:
-        return state.set('list', action.data).set('mouseIn',true);
+        return state.set('mouseIn',true);
       default:
       return state;
     }
