@@ -23,7 +23,12 @@ class Header extends Component {
         >
           <SearchInfoTitle>
             热门搜索
-            <SearchInfoSwitch onClick={() => handleChangePage(page,totalPage)}>换一批</SearchInfoSwitch>
+            <SearchInfoSwitch
+              onClick={() => handleChangePage(page,totalPage)}
+            >
+              <i className="iconfont">&#xe851;</i>
+              换一批
+            </SearchInfoSwitch>
           </SearchInfoTitle>
           <SearchInfoList>
             {pageList} 
