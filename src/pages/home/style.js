@@ -17,7 +17,7 @@ export const HomeLeft = styled.div`
 `;
 export const HomeRight = styled.div`
   float: right;
-  width: 240px;
+  width: 280px;
 `;
 export const TopicWrapper  = styled.div`
   overflow: hidden;
@@ -73,3 +73,13 @@ export const ListInfo = styled.div`
     color: #999;
   }
 `;
+export const RecommendWrapper = styled.div`
+  margin: 30px 0;
+  width: 280px;
+`;
+export const RecommendItem = styled.div`
+  width: 280px;
+  height: 50px;
+  background: url(${(props) => props.imgUrl});
+  background-size: contain; 
+`

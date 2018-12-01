@@ -40,25 +40,41 @@ const defaultState = fromJS({
     desc: '今天分享一部电影——《这个杀手不太冷》，想必大家都不陌生，该作品是由法国著名导演吕克·贝松编剧并执导，于1994年在法国上映，不得不说，该片的诞...',
     imgUrl: '//upload-images.jianshu.io/upload_images/3890084-5459c2711f738d0d.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240'
   }, {
-    id: 1,
-    title: '你看懂《这个杀手不太冷》了吗？除了爱情，同样令人深思',
-    desc: '今天分享一部电影——《这个杀手不太冷》，想必大家都不陌生，该作品是由法国著名导演吕克·贝松编剧并执导，于1994年在法国上映，不得不说，该片的诞...',
-    imgUrl: '//upload-images.jianshu.io/upload_images/3890084-5459c2711f738d0d.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240'
-  },{
     id: 2,
-    title: '你看懂《这个杀手不太冷》了吗？除了爱情，同样令人深思',
-    desc: '今天分享一部电影——《这个杀手不太冷》，想必大家都不陌生，该作品是由法国著名导演吕克·贝松编剧并执导，于1994年在法国上映，不得不说，该片的诞...',
-    imgUrl: '//upload-images.jianshu.io/upload_images/3890084-5459c2711f738d0d.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240'
+    title: '三毛：我们终其一生，就是要摆脱他人的期待，找到真正的自己',
+    desc: '很多人看三毛，是在初高中的时候看的。 那个年纪，我们敏感、困惑， 开始懵懵懂懂地思考人生，以及向往远方， 却又被摁在压抑的狭小的课桌前， 面对升...',
+    imgUrl: '//upload-images.jianshu.io/upload_images/1439852-7b654570a7b8cc65?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240'
   },{
     id: 3,
-    title: '你看懂《这个杀手不太冷》了吗？除了爱情，同样令人深思',
-    desc: '今天分享一部电影——《这个杀手不太冷》，想必大家都不陌生，该作品是由法国著名导演吕克·贝松编剧并执导，于1994年在法国上映，不得不说，该片的诞...',
-    imgUrl: '//upload-images.jianshu.io/upload_images/3890084-5459c2711f738d0d.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240'
+    title: 'Github上 10 个开源免费且优秀的后台控制面板',
+    desc: 'Web 开发中几乎的平台都需要一个后台管理，但是从零开发一套后台控制面板并不容易，幸运的是有很多开源免费的后台控制面板可以给开发者使用，那么有哪...',
+    imgUrl: '//upload-images.jianshu.io/upload_images/6085094-1f331183efa39db4.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240'
   },{
     id: 4,
-    title: '你看懂《这个杀手不太冷》了吗？除了爱情，同样令人深思',
-    desc: '今天分享一部电影——《这个杀手不太冷》，想必大家都不陌生，该作品是由法国著名导演吕克·贝松编剧并执导，于1994年在法国上映，不得不说，该片的诞...',
-    imgUrl: '//upload-images.jianshu.io/upload_images/3890084-5459c2711f738d0d.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240'
+    title: '不是你好看，而是你看起来很好追',
+    desc: '文/番茄十八 刚刚在网上看到有人说：“好看的皮囊太多，温柔的灵魂才是重点，我有一同学，颜值5分，普普通通，保守文静，放人堆儿里也不出挑，身边却有...',
+    imgUrl: '//upload-images.jianshu.io/upload_images/6511360-abe3fe6bd6b9f08d.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240'
+  },{
+    id: 5,
+    title: '她选择了和崔永元一样沦为“疯子”，确是国人心中的女神。',
+    desc: '来源‖煮酒论政 崔永元因“阴阳合同”事件， 一直被推向风口浪尖， 他本是一往无前的斗士， 却被很多人看做是“疯子”， 但就是这样的“疯子”， 敢...',
+    imgUrl: '//upload-images.jianshu.io/upload_images/6167143-a1cb175205943c61.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240'
+  }],
+  recommendList:[{
+    id: 1,
+    imgUrl: 'http://cdn2.jianshu.io/assets/web/banner-s-3-7123fd94750759acf7eca05b871e9d17.png'
+  }, {
+    id: 2,
+    imgUrl: 'http://cdn2.jianshu.io/assets/web/banner-s-5-4ba25cf5041931a0ed2062828b4064cb.png'
+  }, {
+    id: 3,
+    imgUrl: 'http://cdn2.jianshu.io/assets/web/banner-s-4-b70da70d679593510ac93a172dfbaeaa.png'
+  }, {
+    id: 4,
+    imgUrl: 'http://cdn2.jianshu.io/assets/web/banner-s-7-1a0222c91694a1f38e610be4bf9669be.png'
+  }, {
+    id: 5,
+    imgUrl: 'http://cdn2.jianshu.io/assets/web/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7.png'
   }]
 });
   
