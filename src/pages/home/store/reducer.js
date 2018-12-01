@@ -33,6 +33,32 @@ const defaultState = fromJS({
     id: 8,
     title: '简书交友',
     imgUrl: '//upload.jianshu.io/collections/images/509834/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20170810142951.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/144/h/144/format/webp'
+  }],
+  articleList: [{
+    id: 1,
+    title: '你看懂《这个杀手不太冷》了吗？除了爱情，同样令人深思',
+    desc: '今天分享一部电影——《这个杀手不太冷》，想必大家都不陌生，该作品是由法国著名导演吕克·贝松编剧并执导，于1994年在法国上映，不得不说，该片的诞...',
+    imgUrl: '//upload-images.jianshu.io/upload_images/3890084-5459c2711f738d0d.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240'
+  }, {
+    id: 1,
+    title: '你看懂《这个杀手不太冷》了吗？除了爱情，同样令人深思',
+    desc: '今天分享一部电影——《这个杀手不太冷》，想必大家都不陌生，该作品是由法国著名导演吕克·贝松编剧并执导，于1994年在法国上映，不得不说，该片的诞...',
+    imgUrl: '//upload-images.jianshu.io/upload_images/3890084-5459c2711f738d0d.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240'
+  },{
+    id: 2,
+    title: '你看懂《这个杀手不太冷》了吗？除了爱情，同样令人深思',
+    desc: '今天分享一部电影——《这个杀手不太冷》，想必大家都不陌生，该作品是由法国著名导演吕克·贝松编剧并执导，于1994年在法国上映，不得不说，该片的诞...',
+    imgUrl: '//upload-images.jianshu.io/upload_images/3890084-5459c2711f738d0d.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240'
+  },{
+    id: 3,
+    title: '你看懂《这个杀手不太冷》了吗？除了爱情，同样令人深思',
+    desc: '今天分享一部电影——《这个杀手不太冷》，想必大家都不陌生，该作品是由法国著名导演吕克·贝松编剧并执导，于1994年在法国上映，不得不说，该片的诞...',
+    imgUrl: '//upload-images.jianshu.io/upload_images/3890084-5459c2711f738d0d.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240'
+  },{
+    id: 4,
+    title: '你看懂《这个杀手不太冷》了吗？除了爱情，同样令人深思',
+    desc: '今天分享一部电影——《这个杀手不太冷》，想必大家都不陌生，该作品是由法国著名导演吕克·贝松编剧并执导，于1994年在法国上映，不得不说，该片的诞...',
+    imgUrl: '//upload-images.jianshu.io/upload_images/3890084-5459c2711f738d0d.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240'
   }]
 });
   
