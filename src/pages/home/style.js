@@ -82,4 +82,40 @@ export const RecommendItem = styled.div`
   height: 50px;
   background: url(${(props) => props.imgUrl});
   background-size: contain; 
+`;
+export const RecommendDownload = styled.div`
+  overflow: hidden
+  width: 278px;
+  height: 82px;
+  margin-top: 10px;
+  padding: 10px 0;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  .qrcode {
+    display: block
+    float:left;
+    width: 60px;
+    height: 60px;
+    padding: 10px 2px 10px 22px;
+  }
+`;
+export const RecommendAside = styled.div`
+  width: 143px;
+  height: 43px;
+  line-height: 43px;
+  float: right;
+  padding-right: 10px;
+  margin-right: 28px;
+  .title {
+    line-height: 21px;
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 0;
+  }
+  .description {
+    margin-top: 4px;
+    line-height: 18px;
+    font-size: 13px;
+    color: #999;
+  }
 `

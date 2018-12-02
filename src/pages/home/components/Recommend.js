@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 import { connect } from 'react-redux';
-import { RecommendWrapper, RecommendItem} from '../style';
+import { RecommendWrapper, RecommendItem, RecommendDownload, RecommendAside} from '../style';
 class Recommend extends Component {
   render() {
     return (
@@ -10,7 +10,14 @@ class Recommend extends Component {
           return <RecommendItem imgUrl={item.get('imgUrl')} key={item.get('id')}/>
         })
       }
-      </RecommendWrapper>
+      <RecommendDownload>
+        <img alt='' className="qrcode" src="http://cdn2.jianshu.io/assets/web/download-index-side-qrcode-cb13fc9106a478795f8d10f9f632fccf.png" />
+        <RecommendAside>
+          <h3 className="title">下载简书手机App</h3>
+          <p className="description">随时随地发现和创作内容</p>
+        </RecommendAside>
+      </RecommendDownload>
+    </RecommendWrapper>
     )
   }
 }
