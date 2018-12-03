@@ -75,6 +75,32 @@ const defaultState = fromJS({
   }, {
     id: 5,
     imgUrl: 'http://cdn2.jianshu.io/assets/web/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7.png'
+  }],
+  writerList:[{
+    id: 1,
+    name: '穿着prada挤地铁',
+    title: '写了340.2k字 · 3.3k喜欢',
+    imgUrl: 'http://upload.jianshu.io/users/upload_avatars/2587459/0c7e061f-e78e-4b09-b511-340846c4ea0f.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp"'
+  }, {
+    id: 2,
+    name: '遛遛心情的溜妈',
+    title: '写了542.5k字 · 2.1k喜欢',
+    imgUrl: 'http://upload.jianshu.io/users/upload_avatars/5205317/1179d71b-e7c6-4023-89e8-bba25f88272b.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp'
+  }, {
+    id: 3,
+    name: '琪官Kafka',
+    title: '写了364.6k字 · 3.7k喜欢',
+    imgUrl: 'http://upload.jianshu.io/users/upload_avatars/6539412/824c3d2f-b0d2-43a6-885a-d2acd37fd364.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp'
+  }, {
+    id: 4,
+    name: '徐林Grace',
+    title: '写了586.3k字 · 4.7k喜欢',
+    imgUrl: 'http://upload.jianshu.io/users/upload_avatars/5545154/1a3d5ed6-9ad1-44b3-9457-3e6a29dd1b71.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp'
+  }, {
+    id: 5,
+    name: '木清琳',
+    title: '写了209.5k字 · 2k喜欢',
+    imgUrl: 'http://upload.jianshu.io/users/upload_avatars/2631077/dc99c361412c?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp'
   }]
 });
   

@@ -1,8 +1,10 @@
 import React, { Component} from 'react';
+import { connect } from 'react-redux';
 import { WriterWrapper, Writers, WriterItem } from '../style';
 
 class Writer extends Component {
   render() {
+    let { writers } = this.props;
     return (
       <WriterWrapper>
         <h3 className="title">
@@ -13,21 +15,30 @@ class Writer extends Component {
           </span>
         </h3>
         <Writers className="writers">
-          <WriterItem>
-            <div className="item-inner avatar">
-              <img alt="" src="http://upload.jianshu.io/users/upload_avatars/2587459/0c7e061f-e78e-4b09-b511-340846c4ea0f.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp" />
-            </div>
-            <div className="item-inner desc">
-              <h3 className="name">穿着prada挤地铁</h3>
-              <p className="title">写了340.2k字 · 3.3k喜欢</p>
-            </div>
-            <div className="item-inner follow">
-              <span>+关注</span>
-            </div>
-          </WriterItem>
+          {
+            writers.map((item) => {
+              return (
+                <WriterItem key={item.get('id')}>
+                  <div className="item-inner avatar">
+                    <img alt="" src={item.get('imgUrl')} />
+                  </div>
+                  <div className="item-inner desc">
+                    <h3 className="name">{item.get('name')}</h3>
+                    <p className="title">{item.get('title')}</p>
+                  </div>
+                  <div className="item-inner follow">
+                    <span>+关注</span>
+                  </div>
+                </WriterItem>
+              )
+            })
+          }
         </Writers>
       </WriterWrapper> 
     )
   }
 }
-export default Writer;
+const mapState = (state) => ({
+  writers:state.getIn(['home','writerList'])
+})
+export default connect(mapState, null)(Writer);
