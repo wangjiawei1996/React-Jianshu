@@ -118,4 +118,68 @@ export const RecommendAside = styled.div`
     font-size: 13px;
     color: #999;
   }
+`;
+export const WriterWrapper = styled.div`
+  width: 280px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  .title {
+    width: 100%;
+    font-size: 14px;
+    color: #969696;
+    .page-change {
+      float: right;
+      cursor: pointer
+    }
+  }
+`;
+export const Writers = styled.ul`
+  padding-left: 0;
+  margin-top: 10px;
+`;
+export const WriterItem = styled.li`
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+  overflow: hidden;
+  .item-inner {
+    box-sizing: border-box;
+    float: left;
+    &.avatar {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      img {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 1px solid #ddd;
+      }
+    }
+    &.desc {
+      display: inline-block;
+      width: calc(100%-60px);
+      padding: 0 10px;
+      .name {
+        font-size: 14px;
+        color: #333;
+        margin-top: 5px;
+      }
+      .title {
+        font-size: 12px;
+        color: #969696;
+        line-height: 1px;
+      }
+    }
+    &.follow {
+      position: absolute;
+      top: 5px;
+      right: 0;
+      z-index: 100;
+      color: #42c02e;
+      font-size: 13px;
+    }
+  }
 `
