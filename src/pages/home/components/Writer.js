@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 import { connect } from 'react-redux';
-import { WriterWrapper, Writers, WriterItem } from '../style';
+import { WriterWrapper, Writers, WriterItem, MoreWriter } from '../style';
 
 class Writer extends Component {
   render() {
@@ -33,6 +33,9 @@ class Writer extends Component {
               )
             })
           }
+          <MoreWriter>
+            <span>查看全部&nbsp;&nbsp;></span>
+          </MoreWriter>
         </Writers>
       </WriterWrapper> 
     )

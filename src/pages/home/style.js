@@ -182,4 +182,18 @@ export const WriterItem = styled.li`
       font-size: 13px;
     }
   }
+`;
+export const MoreWriter = styled.div`
+  width: 280px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 13px;
+  margin-top: 20px;
+  text-align: center;
+  position: absolute;
+  justify-content: center;
+  color: #787878;
+  background: #f7f7f7;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
 `
