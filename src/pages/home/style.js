@@ -209,4 +209,15 @@ export const MoreWriter = styled.div`
   background: #f7f7f7;
   border: 1px solid #dcdcdc;
   border-radius: 4px;
+`;
+export const LoadMore = styled.div`
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin: 30px 0;
+  background: #a5a5a5;
+  text-align: center;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
 `
