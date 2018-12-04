@@ -7,13 +7,13 @@ class Writer extends Component {
     let { writers } = this.props;
     return (
       <WriterWrapper>
-        <h3 className="title">
+        <div className="title">
           <span className="desc">推荐作者</span>
           <span className="page-change">
             <i className="iconfont change">o</i>
             换一换
           </span>
-        </h3>
+        </div>
         <Writers className="writers">
           {
             writers.map((item) => {
