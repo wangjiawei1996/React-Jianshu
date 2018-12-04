@@ -25,6 +25,20 @@ export const TopicWrapper  = styled.div`
   margin-left: -18px;
   border-bottom: 1px solid #dcdcdc;
 `;
+export const MoreTopic = styled.div`
+  height: 32px;
+  line-height: 32px;
+  background: #f7f7f7;
+  border: 1px solid #dcdcdc;
+  float: left;
+  border-radius: 4px;
+  color: #000;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  margin-left: 18px;
+  width: 100px;
+`
 export const TopicItem = styled.div`
   float: left;
   height: 32px;
@@ -191,7 +205,6 @@ export const MoreWriter = styled.div`
   margin-top: 20px;
   text-align: center;
   position: absolute;
-  justify-content: center;
   color: #787878;
   background: #f7f7f7;
   border: 1px solid #dcdcdc;

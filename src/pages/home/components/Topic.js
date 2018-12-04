@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 import { connect } from 'react-redux';
-import { TopicWrapper,TopicItem } from '../style';
+import { TopicWrapper, MoreTopic, TopicItem } from '../style';
 class Topic extends Component {
   render() {
     const { list } = this.props
@@ -17,7 +17,10 @@ class Topic extends Component {
                 {item.get('title')}
               </TopicItem>
             ))
-        } 
+        }
+        <MoreTopic className="MoreTopic">
+          查看更多 >>
+        </MoreTopic>
       </TopicWrapper>
     )
   }
