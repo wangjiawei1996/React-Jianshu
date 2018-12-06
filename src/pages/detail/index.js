@@ -5,11 +5,12 @@ import { getIn } from 'immutable';
 
 class Detail extends Component {
   render() {
+    const writer = this.props;
     return (
       <DetailWrapper>
-        <Header>{ this.props.title }</Header>
+        <Header>{ writer.title }</Header>
         <Content 
-        dangerouslySetInnerHTML={{__html: this.props.content}}
+        dangerouslySetInnerHTML={{__html: writer.content}}
         />
       </DetailWrapper>
     )
