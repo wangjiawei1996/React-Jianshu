@@ -1,23 +1,30 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { DetailWrapper, Header, Content } from './style'
-import { getIn } from 'immutable';
+import { actionCreators } from './store';
 
 class Detail extends Component {
   render() {
-    const writer = this.props;
     return (
       <DetailWrapper>
-        <Header>{ writer.title }</Header>
+        <Header>{ this.props.title }</Header>
         <Content 
-        dangerouslySetInnerHTML={{__html: writer.content}}
+        dangerouslySetInnerHTML={{__html: this.props.content}}
         />
       </DetailWrapper>
     )
+  }
+  componentDidMount() {
+    this.props.getDetail(this.props.match.params.id);
   }
 }
 const mapState = (state) => ({
   title: state.getIn(['detail','title']),
   content: state.getIn(['detail','content'])
+});
+const mapDispatch = (dispatch) =>({
+  getDetail() {
+    dispatch(actionCreators.getDetail());
+  }
 })
-export default connect(mapState,null)(Detail);
+export default connect(mapState,mapDispatch)(Detail);
