@@ -93,7 +93,6 @@ export const Button = styled.div`
 export const MoreSign = styled.div`
   height: 73px;
   width: 300px;
-  background: red;
   margin: 0 auto;
   .society {
     text-align: center;
@@ -103,3 +102,24 @@ export const MoreSign = styled.div`
     color: #b5b5b5;
   }
 `;
+export const ThreeSociety = styled.div`
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+  img {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    margin: 0 15px;
+    padding:10px;
+  }
+`;
+export const Others = styled.div`
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  margin-left: 15px;
+  display: inline-block;
+  color: gray;
+`
