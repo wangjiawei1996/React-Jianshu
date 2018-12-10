@@ -23,7 +23,7 @@ class Login extends PureComponent {
           </LoginBtn>
           <Button>登录</Button>
           <MoreSign>
-
+            <h6 className="society">——————&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;社交账号登录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——————</h6>
           </MoreSign>
         </LoginBox>
       </LoginWrapper>

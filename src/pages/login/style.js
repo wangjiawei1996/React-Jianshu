@@ -94,5 +94,12 @@ export const MoreSign = styled.div`
   height: 73px;
   width: 300px;
   background: red;
-  margin: 10px auto;
-`
+  margin: 0 auto;
+  .society {
+    text-align: center;
+    position: relative;
+    margin: 0 0 10px;
+    font-size: 12px;
+    color: #b5b5b5;
+  }
+`;
