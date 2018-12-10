@@ -13,10 +13,10 @@ class Login extends PureComponent {
             </LoginNormal>
           </LoginTitle>
           <Input placeholder='手机号或邮箱'/>
-          <Input placeholder='密码'/>
+          <Input placeholder='密码' type="password"/>
           <LoginBtn>
             <RememberBtn>
-              <input type="checkbox" value="true" checked="checked" />
+              <input type="checkbox" value="true" />
               <span className="remember">记住我</span>
               <p className="forget">登录遇到问题？</p>
             </RememberBtn>
@@ -25,9 +25,9 @@ class Login extends PureComponent {
           <MoreSign>
             <h6 className="society">——————&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;社交账号登录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——————</h6>
             <ThreeSociety>
-             <img alt='' src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544441212055&di=a704ff5a34188723d10c4ebd5a8707c4&imgtype=0&src=http%3A%2F%2Fwww.9669.com%2Fuploadfile%2F2016%2F1117%2F20161117033005998.jpg"/>
-             <img alt='' src="https://f11.baidu.com/it/u=2637631149,908982834&fm=72"/>
-             <img alt='' src="http://img5.imgtn.bdimg.com/it/u=2716092914,1740098833&fm=26&gp=0.jpg"/>
+             <img alt='' src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3115168863,408086351&fm=11&gp=0.jpg"/>
+             <img alt='' src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=487628588,2307382441&fm=26&gp=0.jpg"/>
+             <img alt='' src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1567381953,3687108361&fm=26&gp=0.jpg"/>
              <Others>其他</Others>
             </ThreeSociety>
           </MoreSign>

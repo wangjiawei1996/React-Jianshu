@@ -77,9 +77,9 @@ export const RememberBtn = styled.div`
   }
 `
 export const Button = styled.div`
-  width: 280px;
-  height: 40px;
-  line-height: 40px;
+  width: 260px;
+  height: 30px;
+  line-height: 30px;
   color: #fff;
   background: #3194d0;
   border-radius: 25px;
@@ -106,6 +106,7 @@ export const ThreeSociety = styled.div`
   height: 50px;
   line-height: 50px;
   margin: 0 auto;
+  cursor: pointer;
   img {
     display: inline-block;
     box-sizing: border-box;
