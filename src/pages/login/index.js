@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
-import { LoginWrapper,LoginBox,Input,Button,LoginTitle, LoginNormal, LoginSubmit, LoginRegister} from './style';
+import { LoginWrapper,LoginBox,Input,Button,LoginTitle, LoginNormal, LoginSubmit, LoginRegister, LoginBtn, RememberBtn,MoreSign} from './style';
 class Login extends PureComponent {
   render() {
     return (
@@ -14,7 +14,17 @@ class Login extends PureComponent {
           </LoginTitle>
           <Input placeholder='手机号或邮箱'/>
           <Input placeholder='密码'/>
+          <LoginBtn>
+            <RememberBtn>
+              <input type="checkbox" value="true" checked="checked" />
+              <span className="remember">记住我</span>
+              <p className="forget">登录遇到问题？</p>
+            </RememberBtn>
+          </LoginBtn>
           <Button>登录</Button>
+          <MoreSign>
+
+          </MoreSign>
         </LoginBox>
       </LoginWrapper>
     )

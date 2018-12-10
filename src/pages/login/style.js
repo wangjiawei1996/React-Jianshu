@@ -7,10 +7,11 @@ export const LoginWrapper = styled.div`
   right: 0;
   top: 56px;
   background: #eee;
+  font-size: 14px;
 `;
 export const LoginBox = styled.div`
   width: 400px;
-  height: 460px;
+  height: 492px;
   margin: 100px auto;
   background: #fff;
   padding-top: 10px;
@@ -27,7 +28,6 @@ export const LoginNormal = styled.div`
   height: 35px;
   margin: 10px auto;
   overflow: hidden;
-  font-size: 14px;
   display: block;
   padding: 10px;
 `;
@@ -54,14 +54,28 @@ export const Input = styled.input`
   height: 50px;
   line-height: 50px;
   padding: 0 10px;
-  margin: 2px auto;
+  margin: 1px auto;
   color: #777;
   border-bottom: none;
   border-radius: 4px;
   border: 1px solid #c8c8c8;
   background-color: hsla(0,0%,71%,.1);
-  font-size:14px;
+  font-size: 14px;
 `;
+export const LoginBtn = styled.div`
+  overflow: hidden;
+  width: 100%;
+  padding: 2px 0;
+  margin: 20px 0;
+  color:#999;
+`;
+export const RememberBtn = styled.div`
+  margin:0 38px;
+  .forget {
+    margin-top:2px;
+    float:right;
+  }
+`
 export const Button = styled.div`
   width: 280px;
   height: 40px;
@@ -76,3 +90,9 @@ export const Button = styled.div`
   padding: 9px 18px;
   border: none;
 `;
+export const MoreSign = styled.div`
+  height: 73px;
+  width: 300px;
+  background: red;
+  margin: 10px auto;
+`
