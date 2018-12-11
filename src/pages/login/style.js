@@ -74,6 +74,7 @@ export const RememberBtn = styled.div`
   .forget {
     margin-top:2px;
     float:right;
+    cursor: pointer;
   }
 `
 export const Button = styled.div`
