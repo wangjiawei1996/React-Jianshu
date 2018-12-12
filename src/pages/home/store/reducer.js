@@ -30,7 +30,6 @@ const defaultState = fromJS({
         return addArticleList(state,action)
       case constants.TOGGLE_SCROLL_TOP:
         return state.set('showScroll', action.show)
-          
       default:
         return state;
     }
