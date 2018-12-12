@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 import  { actionCreators } from './store';
+import { actionCreators as loginActionCreators } from '../../pages/login/store'
 import {  HeaderWrapper,Logo,NAV,NavItem,SearchWrapper, NavSearch,SearchInfo,SearchInfoTitle,SearchInfoSwitch,SearchInfoList,SearchInfoItem,Addition,Button} from './style';
 class Header extends Component {
   getListArea() {
@@ -27,7 +28,7 @@ class Header extends Component {
             <SearchInfoSwitch
               onClick={() => handleChangePage(page,totalPage, this.spinIcon)}
             >
-              <i ref={(icon) => {this.spinIcon = icon}} className="iconfont spin">O</i>
+              <i ref={(icon) => {this.spinIcon = icon}} className="iconfont spin">&#xe851;</i>
               换一批
             </SearchInfoSwitch>
           </SearchInfoTitle>
@@ -41,7 +42,7 @@ class Header extends Component {
     }
   }
   render() {
-    const { focused, handleInputFocus, handleInputBlur, list, login } = this.props;
+    const { focused, handleInputFocus, handleInputBlur, list, login,logout } = this.props;
     return (
       <HeaderWrapper>
         <Link to='/'>
@@ -52,7 +53,7 @@ class Header extends Component {
           <NavItem className='left'>下载App</NavItem>
           {
             login ? 
-            <NavItem className='right'>退出</NavItem> : 
+            <NavItem onClick={ logout } className='right'>退出</NavItem> : 
             <Link to='/login'><NavItem className='right'>登录</NavItem></Link>
           }
           <NavItem className='right'>
@@ -71,7 +72,7 @@ class Header extends Component {
               ></NavSearch>
             </CSSTransition>
             <i className={focused ? 'focused iconfont zoom' : 'iconfont zoom'}>
-              s
+            &#xe69d;
             </i>
             {this.getListArea()}
           </SearchWrapper>
@@ -127,6 +128,9 @@ const mapDispathToProps = (dispatch) => {
       }else {
         dispatch(actionCreators.changePage(1));
       }
+    },
+    logout() {
+     dispatch(loginActionCreators.logout())
     }
   } 
 }
