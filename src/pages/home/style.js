@@ -194,6 +194,7 @@ export const WriterItem = styled.li`
       z-index: 100;
       color: #42c02e;
       font-size: 13px;
+      cursor: pointer;
     }
   }
 `;
