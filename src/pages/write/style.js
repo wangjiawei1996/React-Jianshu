@@ -122,3 +122,19 @@ export const Question = styled.div`
   width: 77.9px;
   margin-right: 15px;
 `;
+export const WritingMiddle = styled.div`
+  margin-left:213px;
+  width: 219px;
+  height: 100%;
+`;
+export const Article = styled.div`
+  width: 194px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 20px 0 20px 25px;
+  cursor: pointer;
+  color: #595959;
+  border-left-color: #ec7259;
+`;
