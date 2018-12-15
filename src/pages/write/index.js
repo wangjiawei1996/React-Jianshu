@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { } from './style'
-import { WriterWrapper,WriterLeft,Button,NewArticle,NewPart,Input,Diary,Writing,Submit,Cancel } from './style';
+import { WriterWrapper,WriterLeft,Button,NewArticle,NewPart,Input,Diary,Writing,Submit,Cancel,WritingAntd,Setting,Question } from './style';
 class Write extends PureComponent {
   render() {
     const { loginStatus } = this.props;
@@ -19,6 +19,10 @@ class Write extends PureComponent {
             </NewPart>
             <Diary>日记本</Diary>
             <Writing>随笔</Writing>
+            <WritingAntd>
+              <Setting>设置</Setting>
+              <Question>遇到问题？</Question>
+            </WritingAntd>
           </WriterLeft>
         </WriterWrapper>
       )

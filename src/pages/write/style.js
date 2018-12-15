@@ -100,3 +100,25 @@ export const Writing = styled.div`
   font-size: 15px;
   cursor: pointer;
 `;
+export const WritingAntd = styled.div`
+  position: absolute;
+  width: 198px;
+  bottom: 0;
+  height: 50px;
+  line-height: 50px;
+  font-size: 15px;
+  padding-left: 15px;
+  font-size: 15px;
+  overflow: hidden;
+  color: #999;
+  cursor: pointer;
+`;
+export const Setting = styled.div`
+  float: left;
+  width: 47px;
+`;
+export const Question = styled.div`
+  float: right;
+  width: 77.9px;
+  margin-right: 15px;
+`;
