@@ -126,6 +126,7 @@ export const WritingMiddle = styled.div`
   margin-left:213px;
   width: 219px;
   height: 100%;
+  border-right: 1px solid #e6e6e6;
 `;
 export const Article = styled.div`
   width: 194px;
@@ -136,5 +137,53 @@ export const Article = styled.div`
   padding: 20px 0 20px 25px;
   cursor: pointer;
   color: #595959;
-  border-left-color: #ec7259;
+`;
+export const NoTitle = styled.div`
+  overflow: hidden;
+  width: 215px;
+  height: 90px;
+  position: relative;
+  margin-bottom: 0;
+  background-color: #e6e6e6;
+  border-top: 1px solid #d9d9d9;
+  border-left:4px solid #ec7259;
+`;
+export const NoArticle = styled.div`
+  float: right;
+  display: block;
+  width: 104px;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 15px;
+  margin-right: 40px;
+  font-size: 18px;
+`;
+export const NoPicture = styled.div`
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  .pic {
+    width: 22px;
+    height: 30px;
+  }
+`;
+export const Number = styled.div`
+  position: absolute;
+  bottom: 2px;
+  left: 5px;
+  font-size: 9px;
+  line-height: 16px;
+  color: #595959;
+`;
+export const PictureSetting = styled.div`
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+  margin:40px 15px 40px 100px;
+  .setting {
+    float: right;
+    width: 14px;
+    height: 16px;
+    font-size: 16px;
+  }
 `;
