@@ -124,7 +124,7 @@ export const Question = styled.div`
 `;
 export const WritingMiddle = styled.div`
   margin-left:213px;
-  width: 219px;
+  width: 319px;
   height: 100%;
   border-right: 1px solid #e6e6e6;
 `;
@@ -140,7 +140,7 @@ export const Article = styled.div`
 `;
 export const NoTitle = styled.div`
   overflow: hidden;
-  width: 215px;
+  width: 315px;
   height: 90px;
   position: relative;
   margin-bottom: 0;
@@ -175,15 +175,13 @@ export const Number = styled.div`
   line-height: 16px;
   color: #595959;
 `;
-export const PictureSetting = styled.div`
-  font-size: 16px;
-  text-align: center;
-  position: relative;
-  margin:40px 15px 40px 100px;
-  .setting {
-    float: right;
-    width: 14px;
-    height: 16px;
-    font-size: 16px;
-  }
+export const DownArticle = styled.div`
+  width: 294px;
+  height: 30px;
+  line-height: 30px;
+  padding: 20px 0 20px 25px;
+  cursor: pointer;
+  color: #999;
+  margin-bottom: 80px;
+  cursor: pointer;
 `;
