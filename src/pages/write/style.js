@@ -1,4 +1,8 @@
 import styled from 'styled-components';
+import Pic from '../../statics/pic.png'
+import HeaderPic from '../../statics/header.png'
+import DividePic from '../../statics/divide.png'
+import FormualPic from '../../statics/formula.png'
 export const WriterWrapper = styled.div`
   display: block
   z-index: 0;
@@ -218,10 +222,58 @@ export const IconfontB = styled.div`
   width: 16px;
   padding: 11px 14px;
   color: #595959;
-  padding: 11px 14px;
   display: inline-block;
   line-height: 17px;
   font-size: 17px;
   font-weight: 800;
+  margin-left: 0;
+  float: left;
 `;
-
+export const WriterPic = styled.div`
+  height: 17.1px;
+  width: 17px;
+  background:url(${Pic});
+  padding: 8px 3px;
+  background-size:contain;
+  background-repeat:no-repeat;
+  display: block;
+  overflow: hidden;
+  float: left;
+  margin: 8px 5px;
+`;
+export const HeadPic = styled.div`
+  height: 15.1px;
+  width: 15px;
+  background:url(${HeaderPic});
+  padding: 8px 3px;
+  background-size:contain;
+  background-repeat:no-repeat;
+  display: block;
+  overflow: hidden;
+  float: left;
+  margin: 8px 23px;
+`;
+export const Divide = styled.div`
+  height: 15.1px;
+  width: 15px;
+  background:url(${DividePic});
+  padding: 8px 3px;
+  background-size:contain;
+  background-repeat:no-repeat;
+  display: block;
+  overflow: hidden;
+  float: left;
+  margin: 8px 10px;
+`;
+export const Formual = styled.div`
+height: 15.1px;
+width: 15px;
+background:url(${FormualPic});
+padding: 8px 3px;
+background-size:contain;
+background-repeat:no-repeat;
+display: block;
+overflow: hidden;
+float: left;
+margin: 8px 10px;
+`
