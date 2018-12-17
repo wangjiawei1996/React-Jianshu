@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { WriterWrapper,WriterLeft,Button,NewArticle,NewPart,Input,Diary,Writing,Submit,Cancel,WritingAntd,Setting,Question,WritingMiddle,Article,NoTitle,NoArticle,NoPicture,Number,DownArticle,WritingRight,Saved,NoTitleArticle,WriterIconfont,IconfontB,WriterPic,HeadPic,Divide,Formual} from './style';
+import { WriterWrapper,WriterLeft,Button,NewArticle,NewPart,Input,Diary,Writing,Submit,Cancel,WritingAntd,Setting,Question,WritingMiddle,Article,NoTitle,NoArticle,NoPicture,Number,DownArticle,WritingRight,Saved,NoTitleArticle,WriterIconfont,IconfontB,WriterPic,HeadPic,Divide,Formual,Breakout,History} from './style';
 class Write extends PureComponent {
   render() {
     const { loginStatus } = this.props;
@@ -38,11 +38,13 @@ class Write extends PureComponent {
             <Saved>已保存</Saved>
             <NoTitleArticle>无标题文章</NoTitleArticle>
             <WriterIconfont>
-              <IconfontB>B</IconfontB>
+              <IconfontB />
               <WriterPic />
               <HeadPic />
               <Divide />
               <Formual />
+              <Breakout />
+              <History />
             </WriterIconfont>
           </WritingRight>
         </WriterWrapper>

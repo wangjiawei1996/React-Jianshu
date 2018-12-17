@@ -1,8 +1,11 @@
 import styled from 'styled-components';
+import IconfontBPic from '../../statics/weight.png'
 import Pic from '../../statics/pic.png'
 import HeaderPic from '../../statics/header.png'
 import DividePic from '../../statics/divide.png'
 import FormualPic from '../../statics/formula.png'
+import BreakoutPic from '../../statics/breakout.png'
+import HistoryPic from '../../statics/history.png'
 export const WriterWrapper = styled.div`
   display: block
   z-index: 0;
@@ -218,16 +221,16 @@ export const WriterIconfont = styled.div`
   border-bottom: 1px solid #ccc;
 `;
 export const IconfontB = styled.div`
-  height: 12.6px;
-  width: 16px;
-  padding: 11px 14px;
-  color: #595959;
-  display: inline-block;
-  line-height: 17px;
-  font-size: 17px;
-  font-weight: 800;
-  margin-left: 0;
+  height: 15.1px;
+  width: 15px;
+  background:url(${IconfontBPic});
+  padding: 8px 3px;
+  background-size:contain;
+  background-repeat:no-repeat;
+  display: block;
+  overflow: hidden;
   float: left;
+  margin: 8px 10px;
 `;
 export const WriterPic = styled.div`
   height: 17.1px;
@@ -266,14 +269,38 @@ export const Divide = styled.div`
   margin: 8px 10px;
 `;
 export const Formual = styled.div`
-height: 15.1px;
-width: 15px;
-background:url(${FormualPic});
-padding: 8px 3px;
-background-size:contain;
-background-repeat:no-repeat;
-display: block;
-overflow: hidden;
-float: left;
-margin: 8px 10px;
-`
+  height: 15.1px;
+  width: 15px;
+  background:url(${FormualPic});
+  padding: 8px 3px;
+  background-size:contain;
+  background-repeat:no-repeat;
+  display: block;
+  overflow: hidden;
+  float: left;
+  margin: 8px 10px;
+`;
+export const Breakout = styled.div`
+  height: 15.1px;
+  width: 15px;
+  background:url(${BreakoutPic});
+  padding: 8px 3px;
+  background-size:contain;
+  background-repeat:no-repeat;
+  display: block;
+  overflow: hidden;
+  float: left;
+  margin: 8px 10px;
+`;
+export const History = styled.div`
+  height: 15.1px;
+  width: 15px;
+  background:url(${HistoryPic});
+  padding: 8px 3px;
+  background-size:contain;
+  background-repeat:no-repeat;
+  display: block;
+  overflow: hidden;
+  float: left;
+  margin: 8px 10px;
+`;
