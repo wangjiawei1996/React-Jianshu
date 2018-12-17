@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 import  { actionCreators } from './store';
 import { actionCreators as loginActionCreators } from '../../pages/login/store'
-import {  HeaderWrapper,Logo,NAV,NavItem,SearchWrapper, NavSearch,SearchInfo,SearchInfoTitle,SearchInfoSwitch,SearchInfoList,SearchInfoItem,Addition,Button} from './style';
+import {  HeaderWrapper,Logo,NAV,NavItem,SearchWrapper, NavSearch,SearchInfo,SearchInfoTitle,SearchInfoSwitch,SearchInfoList,SearchInfoItem,Addition,Button,Pencil} from './style';
 class Header extends Component {
   getListArea() {
     const {focused, list, page, totalPage,mouseIn,handleMouseEnter, handleMouseLeave, handleChangePage } = this.props;
@@ -28,7 +28,7 @@ class Header extends Component {
             <SearchInfoSwitch
               onClick={() => handleChangePage(page,totalPage, this.spinIcon)}
             >
-              <i ref={(icon) => {this.spinIcon = icon}} className="iconfont spin">&#xe851;</i>
+              <i ref={(icon) => {this.spinIcon = icon}} className="iconfont spin"></i>
               换一批
             </SearchInfoSwitch>
           </SearchInfoTitle>
@@ -80,7 +80,7 @@ class Header extends Component {
         <Addition>
           <Link to="/write">
             <Button className='writting'>
-              <i className="iconfont"></i>
+              <Pencil />
               写文章
             </Button>
             <Button className='reg'>注册</Button>

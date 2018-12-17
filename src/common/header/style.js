@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import logoPic from '../../statics/logo.png'
+import logoPic from '../../statics/logo.png';
+import PencilPic from '../../statics/pencil.png'
 
 export const HeaderWrapper = styled.div`
   z-index: 1;
@@ -111,6 +112,7 @@ export const SearchInfoSwitch = styled.span`
   float: right;
   font-size:13px;
   cursor:pointer;
+  box-sizing: border-box;
   .spin {
     display: block;
     float: left;
@@ -118,7 +120,7 @@ export const SearchInfoSwitch = styled.span`
     margin-right: 2px;
     transition:all .2s ease-in;
     transform: rotate(0deg);
-    transform-origin: center center
+    transform-origin: center center;
   }
 `;
 export const SearchInfoList = styled.div`
@@ -150,12 +152,26 @@ export const Button = styled.div`
   line-height:38px;
   border-radius:19px;
   border:1px solid #ec6149;
-  font-size:14px;
+
+  box-sizing: border-box;
   &.reg{
     color: #ec6149;
   }
   &.writting{
+    font-size:15px;
     color: #fff;
     background:  #ec6149;
   }
-`
+`;
+export const Pencil = styled.div`
+  float: left;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  font-size: 30px;
+  vertical-align: middle;
+  background:url(${PencilPic});
+  background-size:contain;
+  background-repeat:no-repeat;
+  margin-top:12px;
+`;
