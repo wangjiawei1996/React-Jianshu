@@ -185,3 +185,43 @@ export const DownArticle = styled.div`
   margin-bottom: 80px;
   cursor: pointer;
 `;
+export const WritingRight = styled.div`
+  position: absolute;
+  width: 746px;
+  float: right;
+  height: 100%;
+  top: 0;
+  right: 0;
+`;
+export const Saved = styled.p`
+  height: 21px;
+  width: 42px;
+  position: absolute;
+  right: 5px;
+  top: 0;
+  font-size: 14px;
+`;
+export const NoTitleArticle = styled.div`
+  width:626.7px;
+  height: 34px;
+  padding: 21px 80px 10px 40px;
+  font-size: 30px;
+`;
+export const WriterIconfont = styled.div`
+  width: 746px;
+  height: 39px;
+  background-color: #d9d9d9;
+  border-bottom: 1px solid #ccc;
+`;
+export const IconfontB = styled.div`
+  height: 12.6px;
+  width: 16px;
+  padding: 11px 14px;
+  color: #595959;
+  padding: 11px 14px;
+  display: inline-block;
+  line-height: 17px;
+  font-size: 17px;
+  font-weight: 800;
+`;
+
