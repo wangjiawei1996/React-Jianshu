@@ -1,11 +1,15 @@
 import styled from 'styled-components';
-import IconfontBPic from '../../statics/weight.png'
-import Pic from '../../statics/pic.png'
-import HeaderPic from '../../statics/header.png'
-import DividePic from '../../statics/divide.png'
-import FormualPic from '../../statics/formula.png'
-import BreakoutPic from '../../statics/breakout.png'
-import HistoryPic from '../../statics/history.png'
+import IconfontBPic from '../../statics/weight.png';
+import Pic from '../../statics/pic.png';
+import HeaderPic from '../../statics/header.png';
+import DividePic from '../../statics/divide.png';
+import FormualPic from '../../statics/formula.png';
+import BreakoutPic from '../../statics/breakout.png';
+import HistoryPic from '../../statics/history.png';
+import FilePic from '../../statics/file.png';
+import IssuePic from '../../statics/post.png';
+import ExpandPic from '../../statics/fullscreen.png';
+import SavePic from '../../statics/save.png';
 export const WriterWrapper = styled.div`
   display: block
   z-index: 0;
@@ -169,10 +173,13 @@ export const NoPicture = styled.div`
   position: absolute;
   top: 30px;
   left: 20px;
-  .pic {
-    width: 22px;
-    height: 30px;
-  }
+  width: 22px;
+  height: 30px;
+  background:url(${FilePic});
+  padding: 8px 3px;
+  background-size:contain;
+  background-repeat:no-repeat;
+  display: block;
 `;
 export const Number = styled.div`
   position: absolute;
@@ -231,6 +238,7 @@ export const IconfontB = styled.div`
   overflow: hidden;
   float: left;
   margin: 8px 10px;
+  cursor: pointer;
 `;
 export const WriterPic = styled.div`
   height: 17.1px;
@@ -243,6 +251,7 @@ export const WriterPic = styled.div`
   overflow: hidden;
   float: left;
   margin: 8px 5px;
+  cursor: pointer;
 `;
 export const HeadPic = styled.div`
   height: 15.1px;
@@ -255,6 +264,7 @@ export const HeadPic = styled.div`
   overflow: hidden;
   float: left;
   margin: 8px 23px;
+  cursor: pointer;
 `;
 export const Divide = styled.div`
   height: 15.1px;
@@ -267,6 +277,7 @@ export const Divide = styled.div`
   overflow: hidden;
   float: left;
   margin: 8px 10px;
+  cursor: pointer;
 `;
 export const Formual = styled.div`
   height: 15.1px;
@@ -279,6 +290,7 @@ export const Formual = styled.div`
   overflow: hidden;
   float: left;
   margin: 8px 10px;
+  cursor: pointer;
 `;
 export const Breakout = styled.div`
   height: 15.1px;
@@ -291,6 +303,7 @@ export const Breakout = styled.div`
   overflow: hidden;
   float: left;
   margin: 8px 10px;
+  cursor: pointer;
 `;
 export const History = styled.div`
   height: 15.1px;
@@ -303,4 +316,72 @@ export const History = styled.div`
   overflow: hidden;
   float: left;
   margin: 8px 10px;
+  cursor: pointer;
 `;
+export const WriteFunction = styled.div`
+  position: absolute;
+  top: 65px;
+  right: 0;
+  height: 39px;
+  width: 200px;
+  overflow: hidden;
+  font-size: 13px;
+`;
+export const IssueArticle = styled.div`
+  position: absolute;
+  width: 69px;
+  height: 17px;
+  color: #595959;
+  padding: 11px 14px;
+  display: inline-block;
+  line-height: 17px;
+  right: 0;
+  cursor: pointer;
+`
+export const Issue = styled.div`
+  position: absolute;
+  background:url(${IssuePic});
+  background-size:contain;
+  background-repeat:no-repeat;
+  display: block;
+  width: 13px;
+  height: 13px;
+  line-height: 13px;
+  left:0;
+  bottom:13px;
+  cursor: pointer;
+`;
+export const Expand = styled.div`
+  height: 15.1px;
+  width: 15px;
+  color: #595959;
+  padding: 8px 3px;
+  display: inline-block;
+  background:url(${ExpandPic});
+  background-size:contain;
+  background-repeat:no-repeat;
+  margin-top: 8px;
+  margin-left: 65px;
+  cursor: pointer;
+`;
+export const Save = styled.div`
+  height: 15.1px;
+  width: 15px;
+  color: #595959;
+  padding: 8px 3px;
+  display: inline-block;
+  background:url(${SavePic});
+  background-size:contain;
+  background-repeat:no-repeat;
+  margin-top: 8px;
+  margin-left: -65px;
+  cursor: pointer;
+`;
+export const TextArea = styled.textarea`
+  cols="100"; 
+  rows="100";
+  width: 746px;
+  height: 100%;
+  border: none;
+  font-size:18px;
+`

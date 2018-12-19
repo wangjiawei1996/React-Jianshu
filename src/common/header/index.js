@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 import  { actionCreators } from './store';
 import { actionCreators as loginActionCreators } from '../../pages/login/store'
-import {  HeaderWrapper,Logo,NAV,NavItem,SearchWrapper, NavSearch,SearchInfo,SearchInfoTitle,SearchInfoSwitch,SearchInfoList,SearchInfoItem,Addition,Button,Pencil} from './style';
+import {  HeaderWrapper,Logo,NAV,NavItem,SearchWrapper, Search,NavSearch,SearchInfo,SearchInfoTitle,SearchInfoSwitch,SearchInfoList,SearchInfoItem,Addition,Button,Pencil,NavAa} from './style';
 class Header extends Component {
   getListArea() {
     const {focused, list, page, totalPage,mouseIn,handleMouseEnter, handleMouseLeave, handleChangePage } = this.props;
@@ -57,7 +57,7 @@ class Header extends Component {
             <Link to='/login'><NavItem className='right'>登录</NavItem></Link>
           }
           <NavItem className='right'>
-            <i className="iconfont">Aa</i>
+            <NavAa />
           </NavItem>
           <SearchWrapper>
             <CSSTransition
@@ -72,7 +72,7 @@ class Header extends Component {
               ></NavSearch>
             </CSSTransition>
             <i className={focused ? 'focused iconfont zoom' : 'iconfont zoom'}>
-            &#xe69d;
+            <Search />
             </i>
             {this.getListArea()}
           </SearchWrapper>

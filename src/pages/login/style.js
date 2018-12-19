@@ -5,7 +5,7 @@ export const LoginWrapper = styled.div`
   position: absolute;
   left: 0;
   right: 0;
-  top: 56px;
+  top: 60px;
   background: #eee;
   font-size: 14px;
 `;

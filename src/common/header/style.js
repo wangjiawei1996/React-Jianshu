@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import logoPic from '../../statics/logo.png';
-import PencilPic from '../../statics/pencil.png'
+import PencilPic from '../../statics/pencil.png';
+import SearchPic from '../../statics/search.png';
+import AaPic from '../../statics/Aa.png'
 
 export const HeaderWrapper = styled.div`
   z-index: 1;
@@ -29,7 +31,8 @@ export const NavItem = styled.div`
   line-height: 56px;
   padding:0 15px;
   font-size:17px;
-  color:#333; 
+  color:#333;
+  margin-right: 1px;
   &.left {
     float:left;
   }
@@ -40,6 +43,17 @@ export const NavItem = styled.div`
   &.active {
     color: #ea6f5a;
   }
+`;
+export const NavAa = styled.div`
+  width: 10px;
+  height: 14px;
+  line-height: 14px;
+  padding: 14px 8px 1px 5px;
+  margin-top:15px;
+  background:url(${AaPic});
+  background-size:contain;
+  background-repeat:no-repeat;
+  cursor: pointer;
 `;
 export const SearchWrapper = styled.div`
   position:relative;
@@ -57,6 +71,16 @@ export const SearchWrapper = styled.div`
       color:#fff;
     }
   }
+`;
+export const Search = styled.div`
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  vertical-align: middle;
+  background:url(${SearchPic});
+  background-size:contain;
+  background-repeat:no-repeat;
+  margin: 4px;
 `
 export const NavSearch = styled.input.attrs({
   placeholder:'搜索'
@@ -165,13 +189,13 @@ export const Button = styled.div`
 `;
 export const Pencil = styled.div`
   float: left;
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   margin-right: 5px;
-  font-size: 30px;
+  font-size: 18px;
   vertical-align: middle;
   background:url(${PencilPic});
   background-size:contain;
   background-repeat:no-repeat;
-  margin-top:12px;
+  margin-top:10px;
 `;

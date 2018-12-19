@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { WriterWrapper,WriterLeft,Button,NewArticle,NewPart,Input,Diary,Writing,Submit,Cancel,WritingAntd,Setting,Question,WritingMiddle,Article,NoTitle,NoArticle,NoPicture,Number,DownArticle,WritingRight,Saved,NoTitleArticle,WriterIconfont,IconfontB,WriterPic,HeadPic,Divide,Formual,Breakout,History} from './style';
+import { WriterWrapper,WriterLeft,Button,NewArticle,NewPart,Input,Diary,Writing,Submit,Cancel,WritingAntd,Setting,Question,WritingMiddle,Article,NoTitle,NoArticle,NoPicture,Number,DownArticle,WritingRight,Saved,NoTitleArticle,WriterIconfont,IconfontB,WriterPic,HeadPic,Divide,Formual,Breakout,History,WriteFunction,IssueArticle,Issue,Expand,Save,TextArea} from './style';
 class Write extends PureComponent {
   render() {
     const { loginStatus } = this.props;
@@ -27,9 +27,7 @@ class Write extends PureComponent {
             <Article><strong>+</strong>新建文集</Article>
             <NoTitle>
               <NoArticle>无标题文章</NoArticle>
-              <NoPicture>
-                <img className='pic' alt='' src='http://img2.imgtn.bdimg.com/it/u=2277892914,4166593710&fm=26&gp=0.jpg' />
-              </NoPicture>
+              <NoPicture />
               <Number>字数:0</Number>
             </NoTitle>
             <DownArticle><strong>+</strong>在下方新建文件</DownArticle>
@@ -45,7 +43,15 @@ class Write extends PureComponent {
               <Formual />
               <Breakout />
               <History />
+              <WriteFunction>
+                <IssueArticle>
+                  <Issue />发布文章
+                </IssueArticle>
+                <Expand />
+                <Save />
+              </WriteFunction>
             </WriterIconfont>
+            <TextArea></TextArea>
           </WritingRight>
         </WriterWrapper>
       )
