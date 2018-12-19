@@ -1,6 +1,6 @@
 import React, { PureComponent} from 'react';
 import { connect } from 'react-redux';
-import { WriterWrapper, Writers, WriterItem, MoreWriter } from '../style';
+import { WriterWrapper, Writers, WriterItem, MoreWriter,ChangePic } from '../style';
 
 class Writer extends PureComponent {
   render() {
@@ -10,7 +10,7 @@ class Writer extends PureComponent {
         <div className="title">
           <span className="desc">推荐作者</span>
           <span className="page-change">
-            <i className="iconfont change">o</i>
+            <ChangePic />
             换一换
           </span>
         </div>

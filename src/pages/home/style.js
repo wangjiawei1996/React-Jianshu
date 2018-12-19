@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import ChangeWPic from '../../statics/refresh.png'
 
 export const HomeWrapper = styled.div`
   overflow: hidden;
@@ -146,6 +147,16 @@ export const WriterWrapper = styled.div`
       cursor: pointer
     }
   }
+`;
+export const ChangePic = styled.div`
+  width: 14px;
+  height: 14px;
+  background:url(${ChangeWPic});
+  background-size:contain;
+  background-repeat:no-repeat;
+  position: absolute;
+  right:220px;
+  top: 493px
 `;
 export const Writers = styled.ul`
   padding-left: 0;

@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import logoPic from '../../statics/logo.png';
 import PencilPic from '../../statics/pencil.png';
 import SearchPic from '../../statics/search.png';
-import AaPic from '../../statics/Aa.png'
+import AaPic from '../../statics/Aa.png';
+import ChangeWPic from '../../statics/refresh.png'
 
 export const HeaderWrapper = styled.div`
   z-index: 1;
@@ -146,6 +147,16 @@ export const SearchInfoSwitch = styled.span`
     transform: rotate(0deg);
     transform-origin: center center;
   }
+`;
+export const ChangePic = styled.div`
+  position: absolute;
+  right: 60px;
+  top: 23px;
+  width: 14px;
+  height: 14px;
+  background:url(${ChangeWPic});
+  background-size:contain;
+  background-repeat:no-repeat;
 `;
 export const SearchInfoList = styled.div`
   overflow:hidden;
